@@ -9,7 +9,7 @@ object Dependencies {
     libraryDependencies ++= Seq(
       "org.scalameta" %% "munit"         % "1.1.0",
       "org.mockito"    % "mockito-core"  % "5.16.0",
-      "org.gnieh"     %% "diffson-circe" % "4.6.0"
+      "org.gnieh"     %% "diffson-circe" % "4.6.1"
     ).map(_ % Test)
   )
 
