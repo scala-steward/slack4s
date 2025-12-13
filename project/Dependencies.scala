@@ -7,13 +7,13 @@ object Dependencies {
   val TestLib = Seq(
     testFrameworks += new TestFramework("munit.Framework"),
     libraryDependencies ++= Seq(
-      "org.scalameta" %% "munit"         % "1.2.0",
-      "org.mockito"    % "mockito-core"  % "5.20.0",
+      "org.scalameta" %% "munit"         % "1.2.1",
+      "org.mockito"    % "mockito-core"  % "5.21.0",
       "org.gnieh"     %% "diffson-circe" % "4.6.1"
     ).map(_ % Test)
   )
 
-  val Slack = libraryDependencies += "com.slack.api" % "slack-app-backend" % "1.45.4"
+  val Slack = libraryDependencies += "com.slack.api" % "slack-app-backend" % "1.46.0"
 
   val Refined = libraryDependencies += "eu.timepit" %% "refined" % "0.11.3"
 
@@ -21,8 +21,8 @@ object Dependencies {
 
   val Logging = libraryDependencies ++= Seq(
     "org.typelevel" %% "log4cats-slf4j"  % "2.7.1",
-    "ch.qos.logback" % "logback-classic" % "1.5.19" % Test,
-    "ch.qos.logback" % "logback-core"    % "1.5.19" % Test,
+    "ch.qos.logback" % "logback-classic" % "1.5.22" % Test,
+    "ch.qos.logback" % "logback-core"    % "1.5.22" % Test,
     "org.slf4j"      % "jcl-over-slf4j"  % "2.0.17" % Test,
     "org.slf4j"      % "jul-to-slf4j"    % "2.0.17" % Test
   )
@@ -32,7 +32,7 @@ object Dependencies {
     "http4s-ember-server",
     "http4s-ember-client",
     "http4s-circe"
-  ).map("org.http4s" %% _ % "0.23.32")
+  ).map("org.http4s" %% _ % "0.23.33")
 
   val CirceVersion = "0.14.15"
   val Circe        = libraryDependencies ++= Seq(
